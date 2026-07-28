@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | David Baraka</title>
+    <meta name="description" content="Get in touch about social media management, content strategy, and brand growth projects.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="loading-screen" class="loading-screen" role="status" aria-label="Loading website">
+        <div class="loading-content">
+            <div class="loading-logo">DB</div>
+            <div class="loading-bar-container"><div class="loading-bar"></div></div>
+            <p class="loading-text">Loading experience...</p>
+        </div>
+    </div>
+
+    <div class="scroll-progress" aria-hidden="true"><div class="scroll-progress-bar"></div></div>
+
+    <header class="header" id="header">
+        <nav class="nav container" role="navigation" aria-label="Main navigation">
+            <a href="index.html" class="nav-logo" aria-label="David Baraka Home"><span class="logo-text">DB</span><span class="logo-dot"></span></a>
+            <ul class="nav-menu" id="nav-menu" role="menubar">
+                <li role="none"><a href="index.html" class="nav-link" data-page="home" role="menuitem">Home</a></li>
+                <li role="none"><a href="about.html" class="nav-link" data-page="about" role="menuitem">About</a></li>
+                <li role="none"><a href="services.html" class="nav-link" data-page="services" role="menuitem">Services</a></li>
+                <li role="none"><a href="brands.html" class="nav-link" data-page="brands" role="menuitem">Brands</a></li>
+                <li role="none"><a href="contact.html" class="nav-link active" data-page="contact" role="menuitem">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode"><i class="fas fa-moon" aria-hidden="true"></i><i class="fas fa-sun" aria-hidden="true"></i></button>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section page-hero">
+            <div class="container">
+                <div class="section-header" data-reveal>
+                    <span class="section-label">Contact</span>
+                    <h1 class="section-title">Let’s talk about your next project.</h1>
+                    <p class="section-subtitle">Whether you need ongoing support or a one-off campaign, I’m happy to explore what would make the most sense for your brand.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card" data-reveal>
+                        <div class="contact-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+                        <div class="contact-details"><h3>Email</h3><a href="mailto:daveeybaraka@gmail.com">daveeybaraka@gmail.com</a></div>
+                    </div>
+                    <div class="contact-card" data-reveal>
+                        <div class="contact-icon"><i class="fab fa-whatsapp" aria-hidden="true"></i></div>
+                        <div class="contact-details"><h3>WhatsApp</h3><a href="https://wa.me/254790010567" target="_blank" rel="noopener noreferrer">+254 790 010 567</a></div>
+                    </div>
+                    <div class="contact-card" data-reveal>
+                        <div class="contact-icon"><i class="fab fa-instagram" aria-hidden="true"></i></div>
+                        <div class="contact-details"><h3>Instagram</h3><a href="https://www.instagram.com/davidbaraka" target="_blank" rel="noopener noreferrer">@davidbaraka</a></div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper" data-reveal>
+                    <form class="contact-form" id="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required aria-required="true">
+                            <span class="form-error" id="name-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required aria-required="true">
+                            <span class="form-error" id="email-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required aria-required="true">
+                            <span class="form-error" id="subject-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required aria-required="true"></textarea>
+                            <span class="form-error" id="message-error"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full"><span>Send Message</span><i class="fas fa-paper-plane" aria-hidden="true"></i></button>
+                        <div class="form-success" id="form-success" role="status" aria-live="polite">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                            <p>Thank you! Your message has been sent successfully.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo"><span class="logo-text">DB</span><span class="logo-dot"></span></a>
+                    <p>Social media and content systems for brands that want a stronger digital presence.</p>
+                    <div class="footer-social">
+                        <a href="https://wa.me/254790010567" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                        <a href="mailto:daveeybaraka@gmail.com" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="brands.html">Brands</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:daveeybaraka@gmail.com">Email</a></li>
+                        <li><a href="https://wa.me/254790010567">WhatsApp</a></li>
+                        <li><a href="contact.html">Start a conversation</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-availability"><span class="availability-dot"></span><span>Available for freelance</span></div>
+                <p class="footer-copyright">&copy; 2024 David Baraka. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

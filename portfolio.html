@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | David Baraka</title>
+    <meta name="description" content="Selected portfolio work spanning graphics, video, campaigns, and event coverage.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="loading-screen" class="loading-screen" role="status" aria-label="Loading website">
+        <div class="loading-content">
+            <div class="loading-logo">DB</div>
+            <div class="loading-bar-container"><div class="loading-bar"></div></div>
+            <p class="loading-text">Loading experience...</p>
+        </div>
+    </div>
+
+    <div class="scroll-progress" aria-hidden="true"><div class="scroll-progress-bar"></div></div>
+
+    <header class="header" id="header">
+        <nav class="nav container" role="navigation" aria-label="Main navigation">
+            <a href="index.html" class="nav-logo" aria-label="David Baraka Home"><span class="logo-text">DB</span><span class="logo-dot"></span></a>
+            <ul class="nav-menu" id="nav-menu" role="menubar">
+                <li role="none"><a href="index.html" class="nav-link" data-page="home" role="menuitem">Home</a></li>
+                <li role="none"><a href="about.html" class="nav-link" data-page="about" role="menuitem">About</a></li>
+                <li role="none"><a href="services.html" class="nav-link" data-page="services" role="menuitem">Services</a></li>
+                <li role="none"><a href="brands.html" class="nav-link" data-page="brands" role="menuitem">Brands</a></li>
+                <li role="none"><a href="contact.html" class="nav-link" data-page="contact" role="menuitem">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode"><i class="fas fa-moon" aria-hidden="true"></i><i class="fas fa-sun" aria-hidden="true"></i></button>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section page-hero">
+            <div class="container">
+                <div class="section-header" data-reveal>
+                    <span class="section-label">Portfolio</span>
+                    <h1 class="section-title">A collection of work created to be useful, memorable, and easy to share.</h1>
+                    <p class="section-subtitle">The portfolio focuses on the output itself: format, pacing, and the role each piece played in a larger campaign.</p>
+                </div>
+                <div class="portfolio-filter" data-reveal>
+                    <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+                    <button class="filter-btn" data-filter="graphics" aria-pressed="false">Graphics</button>
+                    <button class="filter-btn" data-filter="videos" aria-pressed="false">Videos</button>
+                    <button class="filter-btn" data-filter="reels" aria-pressed="false">Reels</button>
+                    <button class="filter-btn" data-filter="campaigns" aria-pressed="false">Campaigns</button>
+                    <button class="filter-btn" data-filter="events" aria-pressed="false">Events</button>
+                </div>
+                <div class="portfolio-grid">
+                    <article class="portfolio-item" data-category="graphics" data-reveal>
+                        <div class="portfolio-image">
+                            <img src="assets/images/portfolio-1.jpg" alt="Wendo Dresses brand refresh preview">
+                            <div class="portfolio-overlay"><button class="portfolio-view" aria-label="View project"><i class="fas fa-expand" aria-hidden="true"></i></button></div>
+                        </div>
+                        <div class="portfolio-info"><span class="portfolio-category">Graphics</span><h3>Wendo Dresses brand refresh</h3><p>A cohesive visual language for a fashion brand that needed sharper storytelling across feed and story content.</p></div>
+                    </article>
+                    <article class="portfolio-item portfolio-item-tall" data-category="reels" data-reveal>
+                        <div class="portfolio-image">
+                            <img src="assets/images/portfolio-2.jpg" alt="Tatu Ankara collection launch reel preview">
+                            <div class="portfolio-overlay"><button class="portfolio-view" aria-label="View project"><i class="fas fa-expand" aria-hidden="true"></i></button></div>
+                        </div>
+                        <div class="portfolio-info"><span class="portfolio-category">Reels</span><h3>Tatu Ankara collection launch</h3><p>A short-form content series designed to create intrigue, raise reach, and make every launch feel like an event.</p></div>
+                    </article>
+                    <article class="portfolio-item" data-category="campaigns" data-reveal>
+                        <div class="portfolio-image">
+                            <img src="assets/images/portfolio-3.jpg" alt="Summer collection campaign preview">
+                            <div class="portfolio-overlay"><button class="portfolio-view" aria-label="View project"><i class="fas fa-expand" aria-hidden="true"></i></button></div>
+                        </div>
+                        <div class="portfolio-info"><span class="portfolio-category">Campaigns</span><h3>Summer collection campaign</h3><p>A multi-platform rollout balancing paid visibility with organic storytelling and consistent community touchpoints.</p></div>
+                    </article>
+                    <article class="portfolio-item" data-category="videos" data-reveal>
+                        <div class="portfolio-image">
+                            <img src="assets/images/portfolio-4.jpg" alt="Maseno Fashion Weekend promo preview">
+                            <div class="portfolio-overlay"><button class="portfolio-view" aria-label="View project"><i class="fas fa-expand" aria-hidden="true"></i></button></div>
+                        </div>
+                        <div class="portfolio-info"><span class="portfolio-category">Videos</span><h3>Maseno Fashion Weekend promo</h3><p>Editorial-style short-form video built to capture energy, personality, and the atmosphere of the event itself.</p></div>
+                    </article>
+                    <article class="portfolio-item portfolio-item-tall" data-category="events" data-reveal>
+                        <div class="portfolio-image">
+                            <img src="assets/images/portfolio-5.jpg" alt="Live event social coverage preview">
+                            <div class="portfolio-overlay"><button class="portfolio-view" aria-label="View project"><i class="fas fa-expand" aria-hidden="true"></i></button></div>
+                        </div>
+                        <div class="portfolio-info"><span class="portfolio-category">Events</span><h3>Live event social coverage</h3><p>Real-time channel management designed to document momentum while keeping the audience engaged across every touchpoint.</p></div>
+                    </article>
+                    <article class="portfolio-item" data-category="graphics" data-reveal>
+                        <div class="portfolio-image">
+                            <img src="assets/images/portfolio-6.jpg" alt="Monthly content calendar preview">
+                            <div class="portfolio-overlay"><button class="portfolio-view" aria-label="View project"><i class="fas fa-expand" aria-hidden="true"></i></button></div>
+                        </div>
+                        <div class="portfolio-info"><span class="portfolio-category">Graphics</span><h3>Monthly content calendar design</h3><p>A structured visual system created to bring consistency and efficiency to long-term content planning.</p></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo"><span class="logo-text">DB</span><span class="logo-dot"></span></a>
+                    <p>Social media and content systems for brands that want a stronger digital presence.</p>
+                    <div class="footer-social">
+                        <a href="https://wa.me/254790010567" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                        <a href="mailto:daveeybaraka@gmail.com" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="brands.html">Brands</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:daveeybaraka@gmail.com">Email</a></li>
+                        <li><a href="https://wa.me/254790010567">WhatsApp</a></li>
+                        <li><a href="contact.html">Start a conversation</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-availability"><span class="availability-dot"></span><span>Available for freelance</span></div>
+                <p class="footer-copyright">&copy; 2024 David Baraka. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Project preview">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close preview"><i class="fas fa-times" aria-hidden="true"></i></button>
+        <div class="lightbox-content">
+            <div class="lightbox-image" id="lightbox-image"></div>
+            <div class="lightbox-info">
+                <h3 id="lightbox-title">Project Title</h3>
+                <p id="lightbox-desc">Project description goes here.</p>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
